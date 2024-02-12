@@ -1,0 +1,24 @@
+{
+  "name": "zuma/testpackage",
+  "description": "Test package",
+  "type": "library",
+  "version": "1.0",
+  "license": "MIT",
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "Zuma\\TestPackage\\": "src/",
+      "Zuma\\TestPackage\\Tests\\": "tests/",
+      "Zuma\\TestPackage\\Database\\Factories\\": "database/factories/",
+      "Zuma\\TestPackage\\Database\\Seeders\\": "database/seeders/"
+    }
+  },
+  "minimum-stability": "stable",
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Zuma\\TestPackage\\Providers\\TestPackageServiceProvider"
+      ]
+    }
+  }
+}
