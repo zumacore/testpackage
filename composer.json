@@ -1,16 +1,29 @@
 {
   "name": "zuma/testpackage",
   "description": "Basic module package for testing live module installs in zuma/modulize.",
-  "type": "library",
-  "version": "1.0",
+  "type": "project",
   "license": "MIT",
-  "require": {},
+  "keywords": [
+    "zuma",
+    "testpackage",
+    "modulize"
+  ],
+  "authors": [
+    {
+      "name": "Jetstreamlabs, LLC.",
+      "email": "hello@jetstreamlabs.com"
+    }
+  ],
   "autoload": {
     "psr-4": {
       "Zuma\\TestPackage\\": "src/",
-      "Zuma\\TestPackage\\Tests\\": "tests/",
       "Zuma\\TestPackage\\Database\\Factories\\": "database/factories/",
       "Zuma\\TestPackage\\Database\\Seeders\\": "database/seeders/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
     }
   },
   "minimum-stability": "stable",
