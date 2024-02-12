@@ -1,6 +1,6 @@
 {
   "name": "zuma/testpackage",
-  "description": "Test package",
+  "description": "Basic module package for testing live module installs in zuma/modulize.",
   "type": "library",
   "version": "1.0",
   "license": "MIT",
